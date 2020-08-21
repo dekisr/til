@@ -1,5 +1,6 @@
 import { readLines } from 'https://deno.land/std/io/mod.ts'
 
+const start: number = Date.now()
 const tils: TILs = {}
 let count: number = 0
 
@@ -74,6 +75,12 @@ const readme: string =
 
 const encoder: TextEncoder = new TextEncoder()
 await Deno.writeFile('./README.md', encoder.encode(readme))
+const delta: number = Date.now() - start
+console.log(
+  '\x1b[1m\x1b[34m%s\x1b[0m',
+  `Done[✓] : ${delta}ms`
+)
+console.table(Deno.metrics())
 
 // Types
 interface TILs {
