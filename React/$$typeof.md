@@ -42,9 +42,9 @@ https://overreacted.io/why-do-react-elements-have-typeof-property
 
 > ### Error: Objects are not valid as a React child (found: object with keys...
 >
-> **(pt-BR)** Talvez você já tenha se deparado com esta mensagem de erro, seja se aventurando em um High >Order Component ou utilizando a antiga técnica Render Props.
+> **(pt-BR)** Talvez você já tenha se deparado com esta mensagem de erro, seja se aventurando em um High Order Component ou utilizando a antiga técnica Render Props.
 >
-> Bom, não podemos renderizar um **objeto** e sim um Elemento React. Mas o que é um Elemento >React? Um **objeto**.
+> Bom, não podemos renderizar um **objeto** e sim um Elemento React. Mas o que é um Elemento React? Um **objeto**.
 >
 > Se tentarmos simular um objeto assim:
 >
@@ -75,7 +75,7 @@ https://overreacted.io/why-do-react-elements-have-typeof-property
 > )
 > ```
 >
-> Agora sim! Mas esta propriedade não serve apenas como um identificador. Ela é usada também para >medidas de segurança, com a ajuda do primitivo [Symbol]https://developer.mozilla.org/en-US/docs/>Web/JavaScript/Reference/Global_Objects/Symbol).
+> Agora sim! Mas esta propriedade não serve apenas como um identificador. Ela é usada também para medidas de segurança, com a ajuda do primitivo [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
 >
 > Conhecimento adquirido através nosso profeta _Dan Abramov_, leia também:  
 > https://overreacted.io/why-do-react-elements-have-typeof-property
