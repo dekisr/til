@@ -77,5 +77,5 @@ https://overreacted.io/why-do-react-elements-have-typeof-property
 >
 > Agora sim! Mas esta propriedade não serve apenas como um identificador. Ela é usada também para medidas de segurança, com a ajuda do primitivo [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
 >
-> Conhecimento adquirido através nosso profeta _Dan Abramov_, leia também:  
+> Conhecimento adquirido através do nosso profeta _Dan Abramov_, leia também:  
 > https://overreacted.io/why-do-react-elements-have-typeof-property
