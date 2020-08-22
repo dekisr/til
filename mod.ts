@@ -16,7 +16,7 @@ async function readFiles(dirName: string, path: string): Promise<void> {
 
       const title: string = firstLine?.value.replace(/^#*/, '').trim()
 
-      const deepCopy: Array<TIL> = tils[dirName].map((text: any) => ({
+      const deepCopy: Array<TIL> = tils[dirName].map((text: TIL) => ({
         ...text,
       }))
       tils[dirName] = [...deepCopy, { title, fileName: name }]
@@ -58,7 +58,7 @@ const readme: string =
       (category) =>
         `### ${category}
       ${tils[category]
-        .map((text: any) => `- [${text.title}](${category}/${text.fileName})\n`)
+        .map((text: TIL) => `- [${text.title}](${category}/${text.fileName})\n`)
         .join('')}`
     )
     .join('')}
@@ -76,10 +76,7 @@ const readme: string =
 const encoder: TextEncoder = new TextEncoder()
 await Deno.writeFile('./README.md', encoder.encode(readme))
 const delta: number = Date.now() - start
-console.log(
-  '\x1b[1m\x1b[34m%s\x1b[0m',
-  `Done[✓] : ${delta}ms`
-)
+console.log('\x1b[1m\x1b[34m%s\x1b[0m', `Done[✓] : ${delta}ms`)
 console.table(Deno.metrics())
 
 // Types
